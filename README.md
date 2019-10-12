@@ -28,15 +28,29 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
-1. Describe the biggest difference between `.forEach` & `.map`.
+1.	Describe the biggest difference between .forEach & .map.
 
-2. What is the difference between a function and a method?
+Both perform a function on each item in an array but only .map creates a new array while .foreach does not. 
 
-3. What is closure?
+2.	What is the difference between a function and a method?
 
-4. Describe the four rules of the 'this' keyword.
+A function can be passed various types of data to operate on or it can return that said data while a method will only operate on objects or classes that are passed to it.
 
-5. Why do we need super() in an extended class?
+3.	What is closure?
+
+Closure deals with how functions can inherit variables & operators from other functions.  An inner-most function can access variables & function operators from functions that they are nested inside of.  However, the outer-most functions cannot are closed off from accessing variables/keywords from the nested inner-most functions.  
+
+4.	Describe the four rules of the 'this' keyword.ut
+
+Global This-This is when the this is not pointing to anything in particular & returns the entire JavaScript catalog.   This is something you don’t really need to ever do.  
+Implicit This-initially the ‘this’ keyword is referencing the object that it is housed inside of but another function can change the context of ‘this’ by using dot notation.  Whatever object is to the left of the dot is what ‘this’ will not be referencing.  
+New Binding- These are used with constructor functions.  The ‘this’ keyword will reference to the object that uses the “new” keyword.
+Explicit Binding also uses the “new” keyword; however, other keywords (call, apply, bind) are used to override what the “this” keyword is pointing to.  
+
+5.	Why do we need super() in an extended class?
+
+Super will let class extensions to inherit all properties, methods & functions from the Parent class without relying on the confusing, long-winded syntax of prototypes.  
+
 
 ## Project Set up
 
